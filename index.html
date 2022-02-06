@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <div class="container">
+      <div class="form-group">
+        <label for="">Nhập vào số nguyên:</label>
+        <input type="text" name="" id="num" class="form-control" />
+      </div>
+      <!-- Thêm số -->
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        id="btnThemSo"
+        onclick="themSo()"
+      >
+        Thêm Số
+      </button>
+      <p id="pTagXuatMang" class="mt-4 text-primary"></p>
+      <!-- Tính tổng số dương -->
+      <button type="button" class="btn btn-primary" id="btntinhTongSoDuong">
+        Tính tổng số dương
+      </button>
+      <p id="pTagTongSoDuong" class="mt-4 text-primary"></p>
+      <!-- Đếm số dương trong mảng -->
+      <button type="button" class="btn btn-primary" id="btndemSoDuong">
+        Đếm số nguyên dương
+      </button>
+      <p id="pTagDemSoDuong" class="mt-4 text-primary"></p>
+      <!-- Tìm số nhỏ nhất-->
+      <button type="button" class="btn btn-primary" id="btnSoNhoNhat">
+        Tìm số nhỏ nhất
+      </button>
+      <p id="pTagSoNhoNhat" class="mt-4 text-primary"></p>
+
+      <!-- Tìm số dương nhỏ nhất-->
+      <button type="button" class="btn btn-primary" id="btnSoDuongNhoNhat">
+        Tìm số dương nhỏ nhất
+      </button>
+      <p id="pTagSoDuongNhoNhat" class="mt-4 text-primary"></p>
+
+      <!-- Tìm số chẵn cuối cùng-->
+      <button type="button" class="btn btn-primary" id="btnSoChanCuoiCung">
+        Tìm số chẵn cuối cùng
+      </button>
+      <p id="pTagSoChanCuoiCung" class="mt-4 text-primary"></p>
+
+      <!-- Đổi chỗ 2 vị trí nhập vào -->
+      <h5>Nhập vào 2 vị trí muốn đổi chỗ</h5>
+      <input type="number" id="number1" />
+      <input type="number" id="number2" />
+      <button type="button" class="btn btn-primary" id="btnDoiViTri">
+        Đổi vị trí 2 số
+      </button>
+      <p id="pTagDoiViTri" class="mt-4 text-primary"></p>
+
+      <!-- Sắp xếp mảng theo thứ tự tăng dần -->
+      <button type="button" class="btn btn-primary" id="btnSapXepTang">
+        Sắp xếp mảng tăng dần
+      </button>
+      <p id="pTagSapXepTang" class="mt-4 text-primary"></p>
+
+      <!-- Tìm Số nguyên tố đầu tiên -->
+      <button type="button" class="btn btn-primary" id="btnTimSoNguyenTo">
+        Tìm số nguyên tố đầu tiên
+      </button>
+      <p id="pTagTimSoNguyenTo" class="mt-4 text-primary"></p>
+      <hr />
+
+      <!-- Nhập mảng số thực, đếm số các số nguyên -->
+      <div class="form-group">
+        <label for="">Nhập mảng số thực</label>
+        <input type="text" name="" id="realNum" class="form-control" />
+      </div>
+      <button type="button" class="btn btn-primary" id="btnDemSoNguyen">
+        Đếm số các số nguyên trong mảng số thực
+      </button>
+      <p id="pTagDemSoNguyen" class="mt-4 text-primary"></p>
+      <hr />
+
+      <!-- So sánh số lượng số dương và số âm -->
+      <button type="button" class="btn btn-primary" id="btnSoSanhSoAmDuong">
+        So sánh số lượng số âm và số dương
+      </button>
+      <p id="pTagSoSanhSoAmDuong" class="mt-4 text-primary"></p>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./tinhTongSoDuong.js"></script>
+    <script src="./demSoDuong.js"></script>
+    <script src="./timSoNhoNhat.js"></script>
+    <script src="./timSoDuongNhoNhat.js"></script>
+    <script src="./timSoChanCuoiCung.js"></script>
+    <script src="./doiViTri.js"></script>
+    <script src="./sapXepTang.js"></script>
+    <script src="./timSoNguyenTo.js"></script>
+    <script src="./demSoNguyen.js"></script>
+    <script src="./soSanhSoAmDuong.js"></script>
+  </body>
+</html>
